@@ -1,10 +1,3 @@
-/*
-* Jay Patel
-* Yash S Patel
-* Yug Patel
-* Yash L Patel
-*/
-
 package ca.sheridancollege.project;
 
 import java.util.ArrayList;
@@ -49,28 +42,25 @@ public class GroupOfCards {
         return new ArrayList<>(deck);
     }
 
-    void addCard(Card card) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from
-                                                                       // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void addCard(Card card) {
+        deck.add(card);
     }
 
-    int size() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from
-                                                                       // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int size() {
+        return deck.size();
     }
 
-    Card removeCard() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from
-                                                                       // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Card removeCard() {
+        return deck.remove(deck.size() - 1);
     }
 
-    Card getCard(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from
-                                                                       // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Card getCard(int i) {
+        return deck.get(i);
     }
 
-    GroupOfCards copy() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from
-                                                                       // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public GroupOfCards copy() {
+        GroupOfCards copiedGroup = new GroupOfCards();
+        copiedGroup.deck.addAll(deck);
+        return copiedGroup;
     }
 }
