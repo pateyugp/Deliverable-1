@@ -5,7 +5,7 @@
 * Yash L Patel
 */
 package ca.sheridancollege.project;
-
+//editing done
 public class Card {
     private final int rank;
     private final Suit suit;
